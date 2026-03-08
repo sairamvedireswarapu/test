@@ -1,3 +1,9 @@
-from test.hi import fun_to_say_hi_and_introduce_yourself 
+import os
+from dotenv import load_dotenv
 
-fun_to_say_hi_and_introduce_yourself('Alice')
+load_dotenv()   # loads the .env file
+
+api_key = os.getenv("key")
+
+print(api_key)
+hahahahgit 
